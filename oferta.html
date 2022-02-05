@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220205034831">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220205035823">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -203,8 +203,12 @@
 				<div class="popup__text">
 					<form class="callback__form" action="post">
 						<div class="form__title title"><span>Обратный</span> ЗВОНОК</div>
-						<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя">
-						<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон личный">
+						<div class="form__row">
+							<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя">
+						</div>
+						<div class="form__row">
+							<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон личный">
+						</div>
 						<div class="checkbox">
 							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
 							<label for="c_1" class="checkbox__label"><span class="checkbox__text">Даю согласие на обработку
@@ -218,7 +222,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220205034831"></script>
+	<script src="js/app.min.js?_v=20220205035823"></script>
 </body>
 
 </html>
