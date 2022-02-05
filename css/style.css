@@ -139,10 +139,12 @@ body {
   box-shadow: 10px 10px 0px rgba(255, 255, 255, 0.5);
   white-space: nowrap;
   margin: 0px 0.3125rem;
+  color: #ffffff;
 }
 @media (any-hover: hover) {
   .button:hover {
     background-color: #DB5D02;
+    color: #ffffff !important;
   }
 }
 .button._fw {
@@ -191,6 +193,7 @@ textarea {
 }
 
 .input {
+  outline: none;
   width: 100%;
   display: block;
   padding: 0px 20px;
