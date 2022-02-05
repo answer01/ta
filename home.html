@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220205034831">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__row">
+					<a href="" class="header__logo">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+						<p class="header__logo-txt">Работаем по России</p>
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="home.html" class="menu__link">Главная</a></li>
+								<li class="menu__item"><a href="connection.html" class="menu__link">Подключение</a></li>
+								<li class="menu__item"><a href="questions.html" class="menu__link">Ответы на вопросы</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<picture><source srcset="img/ya-logo.webp" type="image/webp"><img data-da=".menu__body,991,0" class="header__addlogo" src="img/ya-logo.png" alt="ya-logo"></picture>
+
+					<div data-da=".menu__body,479,1" class="header__contacts">
+						<a class="header__contact header__phone" href="tel:+79999999999">
+							<img src="img/phone.svg" alt="phone">
+							<p class="header__contact--txt">+7 (999)999- 99 99</p>
+						</a>
+						<a class="header__contact whatsapp" href="#">
+							<picture><source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" alt="whatsapp"></picture>
+						</a>
+					</div>
+
+					<button data-da=".menu__body,767,3" class="header__button" type="button" data-popup="#callback">Заказать
+						звонок</button>
+
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="main">
+				<div class="main__container">
+					<div class="main-slider__slider swiper">
+						<div class="main-slider__swiper swiper-wrapper">
+							<div class="main-slider__slide swiper-slide main-slider__slide1">
+								<picture><source srcset="img/slide1.webp" type="image/webp"><img class="main-slider__slide--img" src="img/slide1.png" alt="taxi-car"></picture>
+								<p class="main-slider__slide--text">Подключение к агрегатору Яндекс Go за 5 минут!!!</p>
+								<a href="" class="main-slider__slide--btn button">ОТПРАВИТЬ ЗАЯВКУ</a>
+							</div>
+							<div class="main-slider__slide swiper-slide main-slider__slide2">
+								<picture><source srcset="img/slide2.webp" type="image/webp"><img class="main-slider__slide--img" src="img/slide2.png" alt="taxi-track"></picture>
+								<p class="main-slider__slide--text">Подключение грузового такси к агрегатору Яндекс Go</p>
+								<a href="" class="main-slider__slide--btn button">ОТПРАВИТЬ ЗАЯВКУ</a>
+							</div>
+							<div class="main-slider__slide swiper-slide main-slider__slide3">
+								<picture><source srcset="img/slide3.webp" type="image/webp"><img class="main-slider__slide--img" src="img/slide3.png" alt="curier"></picture>
+								<p class="main-slider__slide--text">Подключение пешего курьера к агрегатору Яндекс Go!!!</p>
+								<a href="" class="main-slider__slide--btn button">ОТПРАВИТЬ ЗАЯВКУ</a>
+							</div>
+						</div>
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="advantages">
+				<div class="advantages__container">
+					<div class="advantages__title title"><span>Почему именно работать</span> с нами?</div>
+					<div class="advantages__items">
+						<div class="advantages__item">
+							<picture><source srcset="img/i1.webp" type="image/webp"><img src="img/i1.png" alt="" class="advantages__item--img"></picture>
+							<p class="advantages__item--txt">Моментальные
+								выплаты</p>
+						</div>
+						<div class="advantages__item">
+							<picture><source srcset="img/i2.webp" type="image/webp"><img src="img/i2.png" alt="" class="advantages__item--img"></picture>
+							<p class="advantages__item--txt">Комиссия 3 %</p>
+						</div>
+						<div class="advantages__item">
+							<picture><source srcset="img/i3.webp" type="image/webp"><img src="img/i3.png" alt="" class="advantages__item--img"></picture>
+							<p class="advantages__item--txt">Работаем
+								по всей России</p>
+						</div>
+						<div class="advantages__item">
+							<picture><source srcset="img/i4.webp" type="image/webp"><img src="img/i4.png" alt="" class="advantages__item--img"></picture>
+							<p class="advantages__item--txt">Подкючение
+								за 5 минут</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="callback">
+				<div class="callback__container">
+					<form class="callback__form" action="post">
+						<div class="form__title title"><span>Обратный</span> ЗВОНОК</div>
+						<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя">
+						<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон личный" required>
+						<div class="checkbox">
+							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
+							<label for="c_1" class="checkbox__label"><span class="checkbox__text">Даю согласие на
+									обработку
+									персональных данных</span></label>
+						</div>
+						<div class="callback__button--wraper">
+							<button class="callback__button button" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+
+			<section class="needs">
+				<div class="needs__container">
+					<div class="needs__title title"><span>Что нужно</span> для подключения?</div>
+
+					<div class="needs__items">
+						<div class="needs__item">
+							<picture><source srcset="img/ic1.webp" type="image/webp"><img src="img/ic1.png" alt="" class="needs__item--img"></picture>
+							<p class="needs__item--text">Стаж Не менее 3-х лет</p>
+						</div>
+						<div class="needs__item">
+							<picture><source srcset="img/ic2.webp" type="image/webp"><img src="img/ic2.png" alt="" class="needs__item--img"></picture>
+							<p class="needs__item--text">Возраст
+								Не младше 21 года</p>
+						</div>
+						<div class="needs__item">
+							<picture><source srcset="img/ic3.webp" type="image/webp"><img src="img/ic3.png" alt="" class="needs__item--img"></picture>
+							<p class="needs__item--text">Водительские права
+								Категория В</p>
+						</div>
+
+						<div class="needs__item">
+							<picture><source srcset="img/ic4.webp" type="image/webp"><img src="img/ic4.png" alt="" class="needs__item--img"></picture>
+							<p class="needs__item--text">
+								Cвидетельство
+								о регистрации
+								транспортного
+								средства
+							</p>
+						</div>
+						<div class="needs__item">
+							<picture><source srcset="img/ic5.webp" type="image/webp"><img src="img/ic5.png" alt="" class="needs__item--img"></picture>
+							<p class="needs__item--text">
+								Автомобиль
+								Исправный авто не старше пяти лет
+							</p>
+						</div>
+						<div class="needs__item">
+							<picture><source srcset="img/ic4.webp" type="image/webp"><img src="img/ic4.png" alt="" class="needs__item--img"></picture>
+							<p class="needs__item--text">
+								Лицензия
+								транспортного
+								средства
+							</p>
+						</div>
+
+						<div class="needs__item">
+							<picture><source srcset="img/ic6.webp" type="image/webp"><img src="img/ic6.png" alt="" class="needs__item--img"></picture>
+							<p class="needs__item--text">
+								Устройство
+								Наличие GPS/Глонасс ОП,
+								Android 5.0 и выше
+							</p>
+						</div>
+						<div class="needs__item">
+							<picture><source srcset="img/ic7.webp" type="image/webp"><img src="img/ic7.png" alt="" class="needs__item--img"></picture>
+							<p class="needs__item--text">
+								Приложение таксометр
+								Яндекc Про
+							</p>
+						</div>
+						<div class="needs__item">
+							<picture><source srcset="img/ic8.webp" type="image/webp"><img src="img/ic8.png" alt="" class="needs__item--img"></picture>
+							<p class="needs__item--text">
+								Гражданство
+								России либо стран
+								Таможенного союза
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+			<section class="comfort">
+				<div class="comfort__container">
+
+					<div class="comfort__top">
+
+						<ul class="comfort__top--list comfort-list">
+							<li class="comfort-list__item">Большое количество заказов</li>
+							<li class="comfort-list__item">Нет штрафов</li>
+							<li class="comfort-list__item">Возможность осуществлять до 25 заказов ежедневно</li>
+							<li class="comfort-list__item">Тарифы «эконом», «комфорт» и «бизнес»</li>
+							<li class="comfort-list__item">Выплаты по безналичному расчёту ежедневно</li>
+							<li class="comfort-list__item">Такси взаимодействует лишь с легальными таксопарками</li>
+						</ul>
+
+						<div class="comfort__top--decor comfort-decor">
+							<picture><source srcset="img/decor1.webp" type="image/webp"><img src="img/decor1.jpg" alt="happy taxist" class="comfort-decor__img"></picture>
+						</div>
+
+					</div>
+
+					<div class="comfort__bottom">
+
+						<div class="comfort__bottom--decor comfort-decor">
+							<picture><source srcset="img/decor2.webp" type="image/webp"><img src="img/decor2.jpg" alt="taxi park" class="comfort-decor__img"></picture>
+						</div>
+
+						<ul class="comfort__bottom--list comfort-list">
+							<li class="comfort-list__item">Отсутствие перебоев в системе</li>
+							<li class="comfort-list__item">Самостоятельный расчёт стоимости поездки для клиента</li>
+							<li class="comfort-list__item">Возможность работать на собственном авто, либо на арендованном
+								автомобиле
+							</li>
+							<li class="comfort-list__item">Свободный график работы
+							</li>
+							<li class="comfort-list__item">Средний заработок около 3500 руб. в день
+							</li>
+							<li class="comfort-list__item">Вывод денег осуществляется на реквизиты, не требуется приезжать в
+								офис</li>
+						</ul>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="about-us">
+				<div class="about-us__container">
+					<div class="about-us__title title">
+						<span>О</span> Нас
+					</div>
+					<div class="about-us__content">
+
+						<div class="about-us__content--text about-us-text">
+							<p class="about-us-text__item">
+								Компания Такси Агрегатор - сертифицированный таксопарк Яндекс.Такси. Как говорит сам агрегатор,
+								это означает, что таксопарк заботится не только о своей выгоде, но и о комфорте и высоких
+								заработках своих водителей. Попасть в список сертифицированных таксопарков Яндекс.Такси может не
+								каждый - для этого нужно выстроить отношения с водителями на высоком уровне доверия и
+								корпоративной этики.
+							</p>
+							<p class="about-us-text__item">
+								Таксопарк Такси Агрегатор бережет свой статус сертифицированного партнёра Яндекс.Такси и делает
+								все возможное для его сохранения:
+							</p>
+							<p class="about-us-text__item">
+								Мы заботимся и о финансовом положении водителей. Чтобы соответствовать званию сертифицированного
+								таксопарка Яндекс.Такси, мы соблюдаем следующие условия:
+							</p>
+							<ul class="about-us-text__item-list">
+								<li class="about-us-text__item-list--item">используем низкую комиссию 3%,
+								</li>
+								<li class="about-us-text__item-list--item">не вводим скрытых платежей и комиссий,</li>
+								<li class="about-us-text__item-list--item">средства выплачиваются моментально через официальное
+									приложение QIWI-Банка «Таксиагрегатор» (минимальная комиссия 20 руб. или 1 %)</li>
+							</ul>
+						</div>
+
+						<div class="about-us__content--img-wrap about-us-img-wrap">
+							<picture><source srcset="img/sertificat.webp" type="image/webp"><img src="img/sertificat.jpg" alt="" class="about-us__content--img"></picture>
+
+						</div>
+
+
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__contacts footer-contacts">
+					<div class="footer-contacts__items">
+						<div class="footer-contacts__items--title title">
+							<span>НАШИ</span> КОНТАКТЫ
+						</div>
+
+						<div class="footer-contacts__item">
+							Офис: <a class="footer-contacts__item--content" href="#">г. Люберцы Егорьевское ш., 3В</a>
+						</div>
+						<div class="footer-contacts__item">
+							Телефон: <a class="footer-contacts__item--content" href="tel:99999999999">99999999999</a>
+						</div>
+						<div class="footer-contacts__item whatsapp">
+							<a class="footer-contacts__item--content" href="#"><picture><source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" alt="whatsapp"></picture></a>
+						</div>
+						<div class="footer-contacts__item footer-contacts__logo">
+							<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+						</div>
+
+					</div>
+
+					<div class="footer-contacts__map">
+						<div class="footer-contacts__map--title title"><span>Схема</span> проезда</div>
+
+						<div class="footer-contacts__map--container">
+							<picture><source srcset="img/map.webp" type="image/webp"><img src="img/map.jpg" alt="map"></picture>
+						</div>
+
+						<a href="#" class="footer-contacts__map--link">Ссылка на яндекс навигатор</a>
+
+					</div>
+
+				</div>
+
+
+			</div>
+			<div class="footer__row">
+
+				<div class="footer__row--copyright">Copyright © Такси Агрегатор 2007-2022г.</div>
+
+			</div>
+		</footer>
+	</div>
+	<div id="callback" aria-hidden="true" class="popup popup-callback">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-callback-content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+					<form class="callback__form" action="post">
+						<div class="form__title title"><span>Обратный</span> ЗВОНОК</div>
+						<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя">
+						<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон личный">
+						<div class="checkbox">
+							<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
+							<label for="c_1" class="checkbox__label"><span class="checkbox__text">Даю согласие на обработку
+									персональных данных</span></label>
+						</div>
+						<div class="callback__button--wraper">
+							<button class="callback__button button" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220205034831"></script>
+</body>
+
+</html>
